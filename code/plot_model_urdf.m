@@ -155,8 +155,9 @@ if h{fig_idx,subfig_idx}.first_flag % first flag
     
     % Plot mesh information
     if PLOT_MESH || PLOT_CUBE % mesh from stl files
-        camlight('r'); % 'h'
+        camlight('r'); 
         material('dull');
+        cube_colors = jet(model.n_joint);
         for i = 1:model.n_joint % for all joint
             % get child link of the current joint
             curr_child_link_name = model.child_links{i};
@@ -182,8 +183,8 @@ if h{fig_idx,subfig_idx}.first_flag % first flag
                 end
                 % plot bounding box
                 if PLOT_CUBE
-                    opt = struct('color',[0.1,0.1,1],'alpha',0.1,'sub_idx',i,...
-                        'line_style','-');
+                    opt = struct('color',cube_colors(i,:),'alpha',0.1,'sub_idx',i,...
+                        'line_style','-','line_color',cube_colors(i,:));
                     plot_cube(p_link',v_min,v_len,R_link',opt);
                 end
             end % if curr_link_filename % if stl exists, load and plot
@@ -305,6 +306,7 @@ else % not for the first time
     
     % Update mesh information
     if PLOT_MESH || PLOT_CUBE % mesh from stl files
+        cube_colors = hsv(model.n_joint);
         for i = 1:model.n_joint % for all joint
             % get child link of the current joint
             curr_child_link_name = model.child_links{i};
@@ -325,8 +327,8 @@ else % not for the first time
                 end
                 % plot bounding box
                 if PLOT_CUBE
-                    opt = struct('color',[0.1,0.1,1],'alpha',0.1,'sub_idx',i,...
-                        'line_style','-');
+                    opt = struct('color',cube_colors(i,:),'alpha',0.1,'sub_idx',i,...
+                        'line_style','-','line_color',cube_colors(i,:));
                     plot_cube(p_link',v_min,v_len,R_link',opt);
                 end
             end % if curr_link_filename % if stl exists, load and plot

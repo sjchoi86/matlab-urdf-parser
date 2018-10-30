@@ -9,6 +9,7 @@ color = getfield_safe(opt,'color','b');
 alpha = getfield_safe(opt,'alpha',0.5);
 sub_idx = getfield_safe(opt,'sub_idx',1);
 line_style = getfield_safe(opt,'line_style','none');
+line_color = getfield_safe(opt,'line_color','k');
 
 % Make enough handlers at the first
 if isempty(h)
@@ -28,7 +29,8 @@ if h{sub_idx}.first_flag
     h{sub_idx}.patch = patch('Vertices',vertex_matrix,...
         'Faces',faces_matrix,...
         'FaceColor',color,'FaceAlpha',alpha,...
-        'LineStyle',line_style);
+        'LineStyle',line_style,'EdgeColor',line_color,...
+        'EdgeAlpha',0.8,'LineWidth',1);
 else
     h{sub_idx}.patch.Vertices = vertex_matrix;
 end
