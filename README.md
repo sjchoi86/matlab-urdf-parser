@@ -1,5 +1,7 @@
 # URDF-parser 
-MATLAB implementation of parsing universal robbot description format (URDF)
+- MATLAB implementation of parsing universal robbot description format (URDF)
+- It contains two examples of parsing **Sawyer** from Rethink Robotics and **Panda** from Franka Emika. 
+- Special thanks to Andy Park. 
 
 ### **Sawyer** from Rethink Robotics (~~RIP~~)
 - Model with meshes and cubes
