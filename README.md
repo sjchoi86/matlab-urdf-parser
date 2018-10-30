@@ -2,14 +2,14 @@
 MATLAB implementation of parsing universal robbot description format (URDF)
 
 ### **Sawyer** from Rethink Robotics (~~RIP~~)
-<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_sawyer.png" width="60%">
+<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_sawyer.png" height="500">
 AA
-<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_node_sawyer.png" width="20%">
+<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_node_sawyer.png" height="150">
  
 ### **Panda** from Franka Emika
-<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_franka.png" width="60%">
+<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_franka.png" height="500">
 AA
-<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_node_franka.png" width="20%">
+<img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_node_franka.png" height="150">
 
 ### Example URDF file of Panda
 <details>
