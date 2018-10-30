@@ -4,9 +4,11 @@ MATLAB implementation of parsing universal robbot description format (URDF)
 ### **Sawyer** from Rethink Robotics (~~RIP~~)
 - Model with meshes and cubes
 
- <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_sawyer.png" height="400">
- <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_simple_sawyer.png" height="400">
- 
+<p float="left">
+ <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_sawyer.png" height="300"/>
+ <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_simple_sawyer.png" height="300"/>
+</p>
+
 - Video clip
  
   ![](https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/vid/giphy_sawyer.gif)
@@ -18,9 +20,11 @@ MATLAB implementation of parsing universal robbot description format (URDF)
 ### **Panda** from Franka Emika
 - Model with meshes and cubes
 
- <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_franka.png" height="400">
- <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_simple_franka.png" height="400">
- 
+<p float="left">
+ <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_model_franka.png" height="300"/>
+ <img src="https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/fig/fig_simple_franka.png" height="300"/>
+</p>
+
 - Video clip
 
  ![](https://github.com/sjchoi86/matlab-urdf-parser/blob/master/code/vid/giphy_franka.gif)
