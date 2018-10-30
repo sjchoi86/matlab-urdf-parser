@@ -31,8 +31,10 @@ sig2w_var = 1e-8;
 grp = get_grp(t_anchor,x_anchor,t_test,l_anchor,l_test,...
     kfun_str,hyp_mu,sig2w_mu,hyp_var,sig2w_var);
 % Plot GRP
-% opt = struct('n_sample',1,'seed',0,'names','','title_str','');
-% plot_grp(grp,opt);
+opt = struct('n_sample',1,'seed',0,'names','','title_str','');
+plot_grp(grp,opt);
+
+%%
 % Sample from GRP
 n_sample = 1;
 sampled_path_list = sample_grp(grp,n_sample);
