@@ -3,13 +3,13 @@ ccc
 ccc
 
 % Load the model
-model_name = 'sawyer'; % franka / sawyer
+model_name = 'franka'; % franka / sawyer
 urdf_path = sprintf('model/%s/%s_urdf.xml',model_name,model_name);
 base_name = 'world_fixed'; VERBOSE = true;
 model = parse_urdf(model_name,urdf_path,base_name,VERBOSE);
 
 % Plot parsed URDF tree structure
-opt = struct('fig_idx',1,'fig_size',[0.1,0.4,0.2,0.3],...
+opt = struct('fig_idx',1,'fig_size',[0.1,0.4,0.8,0.3],...
     'title_str','Parsed from URDF');
 fig_node = plot_node(model.node,opt);
 
