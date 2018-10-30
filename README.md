@@ -1,4 +1,4 @@
-# matlab-urdf-parser
+# MATLAB implementation of parsing universal robbot description format (URDF)
 Matlab implementation parsing URDF 
 
 ### **Sawyer** from Rethink Robotics (~~RIP~~)
