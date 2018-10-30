@@ -1,4 +1,4 @@
-function plot_node(node,opt)
+function fig = plot_node(node,opt)
 %
 % Plot node information
 %

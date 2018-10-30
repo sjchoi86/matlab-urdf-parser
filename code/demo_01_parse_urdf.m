@@ -11,7 +11,7 @@ model = parse_urdf(model_name,urdf_path,base_name,VERBOSE);
 % Plot parsed URDF tree structure
 opt = struct('fig_idx',1,'fig_size',[0.1,0.4,0.2,0.3],...
     'title_str','Parsed from URDF');
-plot_node(model.node,opt);
+fig_node = plot_node(model.node,opt);
 
 % Initialize joints
 names2control = model.joint_names_revolute;
@@ -26,12 +26,14 @@ opt = struct('fig_idx',2,'subfig_idx',1,...
     'axis_info',[-1.5,+1.5,-1.5,+1.5,0.0,1.6],...
     'SHOW_TEXT',1,'PLOT_LINKS',1,'PLOT_JOINTS',0,'PLOT_COORDINATES',1, ...
     'PLOT_ROTATIONAL_AXES',1,'PLOT_MESH',1,'PLOT_CUBE',1);
-fig = plot_model_urdf(model,opt);
+fig_model = plot_model_urdf(model,opt);
 drawnow;
 
 % Save figure
-png_name = sprintf('fig/fig_%s.png',model_name);
-save_fig2png(fig,png_name,VERBOSE);
+png_name = sprintf('fig/fig_node_%s.png',model_name);
+save_fig2png(fig_node,png_name,VERBOSE);
+png_name = sprintf('fig/fig_model_%s.png',model_name);
+save_fig2png(fig_model,png_name,VERBOSE);
 
 %% Plot random positions
 max_tick = 10;
